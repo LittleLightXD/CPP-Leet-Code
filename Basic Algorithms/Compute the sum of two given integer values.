@@ -1,1 +1,28 @@
 Write a C++ program to compute the sum of two given integer values. If the two values are the same, then return triple their sum.
+#include <iostream> //Preprocessed Headers.
+
+using namespace std; //Namespace declaration.
+
+int test(int x, int y) // A function with argument variables x and y.
+        {
+            if(x==y){
+                return ((x+y)*3);
+            }
+                else {
+                    return (x+y);
+                     }
+        }
+    //If else is used to check and print result.
+    // can also work with single line - return x==y ? (x+y)*3 : x+y.
+    
+int main() //main function.
+ {
+  cout << test(1, 2) << endl;  
+  cout << test(3, 2) << endl;  //Printing outoput with given parameters in 
+  cout << test(2, 2) << endl;  //test functiom.
+  return 0;    
+}
+/* output
+3
+5
+12 */
