@@ -1,4 +1,5 @@
 Write a C++ program to compute the sum of two given integer values. If the two values are the same, then return triple their sum.
+
 #include <iostream> //Preprocessed Headers.
 
 using namespace std; //Namespace declaration.
