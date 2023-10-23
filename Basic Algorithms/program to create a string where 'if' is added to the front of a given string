@@ -1,0 +1,21 @@
+Write a C++ program to create a string where 'if' is added to the front of a given string. If the string already begins with 'if', return the string unchanged.
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+string check(string a){
+    if(a.length() > 2 && a.substr(0, 2)=="if"){
+        return a;
+    }
+    return "if" + a;
+}
+
+int main(){
+    string a, b;
+    
+    cin >> a;
+    b = check(a);
+    cout << b << endl;
+    return 0;
+}
