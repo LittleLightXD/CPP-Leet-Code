@@ -1,7 +1,9 @@
 Write a C++ program to find the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference.
 
 #include <iostream>
+
 using namespace std;
+
 int main() {
     int n ;
     cin >> n;
