@@ -1,4 +1,4 @@
-Write a C++ program to reverse a given string.
+Write a C++ program to reverse a given string using reverse function.
 
 #include <iostream>
 #include <string>
