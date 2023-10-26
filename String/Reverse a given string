@@ -1,0 +1,19 @@
+Write a C++ program to reverse a given string.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main () {
+    string str= "affdsgsd";
+    string temp_ver = str;
+    int index = 0;
+    
+    for ( int i = temp_ver.length()-1; i>=0; i--){
+        str[index] = temp_ver[i];
+		index++;
+    }
+    cout << str;
+    return 0;
+}
