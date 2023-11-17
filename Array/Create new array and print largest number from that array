@@ -1,0 +1,33 @@
+Create a new array of specific size and pring the largest element of that array.
+
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    cout << "Enter the Size of the array" << endl;
+    int N;
+    cin >> N;
+    cout << "Enter the elements of the array of size :" << N <<endl;
+    int arr[N];
+
+    for (int i=0; i<N; i++){
+    cin >> arr[i];
+    }
+    cout << "The array is :" <<" ";
+    
+    for (int i=0; i<N; i++){
+    cout << arr[i] << " ";
+    }
+    cout << endl;
+    sort(arr, arr+N);
+
+    for (int i=0; i<N; i++) {
+    cout << arr[i] << " ";
+    }
+    int i = N-1;
+    cout <<"Largest element in the array is " << arr[i];
+
+    return 0;
+}
