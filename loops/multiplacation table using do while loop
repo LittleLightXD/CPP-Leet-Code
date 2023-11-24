@@ -1,0 +1,22 @@
+Multiplacation table using do-while loop.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int n=1;
+    int x;
+    
+    cout << "Enter the number" << endl;
+    cin >> x ;
+    cout << "Multiplacation of " << x << " is" << endl;
+   
+    do{
+      cout << n*x << endl;
+      n++;
+    } while (n<11);
+
+    return 0;
+}
